@@ -31,6 +31,9 @@ html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); c
 #tl { top: 18px; left: 22px; transform: scale(var(--k)); transform-origin: top left; }
 h1 { font-size: 20px; font-weight: bold; margin: 0; letter-spacing: 0; }
 .sub { font-size: 12px; color: var(--mute); margin: 4px 0 12px; }
+.xlink { color: var(--teal); text-decoration: none; border-bottom: 1px solid rgba(14,110,110,0.45); white-space: nowrap; }
+.xlink:hover { border-bottom-color: var(--teal); }
+.xlink:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
 button { font: 13px Arial, Helvetica, sans-serif; color: var(--ink); background: #fff; border: 1px solid #A8A8A8;
   border-radius: 2px; padding: 5px 10px; cursor: pointer; line-height: 1.2; }
 button:hover { border-color: var(--ink); }
@@ -99,7 +102,7 @@ kbd { font: 11px Arial, Helvetica, sans-serif; border: 1px solid #C8C8C8; border
 
 <header id="tl" class="ui">
   <h1>How a MEMS gyroscope senses rotation</h1>
-  <p class="sub">Z-axis vibratory gyroscope, Coriolis effect</p>
+  <p class="sub">Z-axis vibratory gyroscope, Coriolis effect &nbsp;&middot;&nbsp; <a class="xlink" href="fabrication.html">Fabrication &rarr;</a></p>
   <nav id="steps" aria-label="Steps">
     <button data-step="1" aria-pressed="true">1 Drive</button>
     <button data-step="2" aria-pressed="false">2 Rotate</button>
